@@ -1,0 +1,33 @@
+{
+	"name": "detail-left.json",
+	"$groups": [
+		{
+			"$title": "Utilisateur",
+			"$items": [
+				{
+					"$title": "{{$user.name}}",
+					"$icon": "user"
+				},
+				{
+					"$title": "Déconnexion",
+					"$icon": "off",
+					"$link": {
+						"$logout": true
+					}
+				}
+			]
+		},
+		{
+			"$title": "Géneral",
+			"$items": [
+				{
+					"$title": "Accueil",
+					"$icon": "home",
+					"$link": {
+						"$page": "home-page"
+					}
+				}
+			]
+		}
+	]
+}

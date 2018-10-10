@@ -1,0 +1,10 @@
+{
+	"type": "object",
+	"properties": {
+	},
+	"links": {
+		"link1": {
+			"title": "Go to my page"
+		}
+	}
+}
