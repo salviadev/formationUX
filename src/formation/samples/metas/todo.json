@@ -8,20 +8,25 @@
 		"checkList": {
 			"type": "array",
 			"items": {
-				"type": "object",
-				"properties": {
-					"id": {
-						"title": "Id",
-						"type": "integer"
-					},
-					"done": {
-						"title": "Done",
-						"type": "boolean"
-					},
-					"title": {
-						"title": "Title",
-						"type": "string"
-					}
+				"$ref": "#/definitions/todoItem"
+			}
+		}
+	},
+	"definitions": {
+		"todoItem":  {
+			"type": "object",
+			"properties": {
+				"id": {
+					"title": "Id",
+					"type": "integer"
+				},
+				"done": {
+					"title": "Done",
+					"type": "boolean"
+				},
+				"title": {
+					"title": "Title",
+					"type": "string"
 				}
 			}
 		}
