@@ -5,6 +5,15 @@
 	"links": {
 		"link1": {
 			"title": "Go to my page"
+		},
+		"customer": {
+			"title": "Customer"
+		},
+		"todo": {
+			"title": "Check List"
+		},
+		"address": {
+			"title": "Address"
 		}
 	}
 }

@@ -1,0 +1,17 @@
+{
+	"name": "todo",
+	"$items": [
+		{
+			"$config": {
+				"$titleIsHidden": true,
+				"form": {
+					"name": "samples/forms/todo",
+					"meta": "samples/metas/todo",
+					"controller": "phoenix.empty.controller"
+				},
+				"$type": "form"
+			}
+		}
+	],
+	"$type": "block"
+}

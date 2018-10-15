@@ -1,0 +1,17 @@
+{
+	"name": "customer",
+	"$items": [
+		{
+			"$config": {
+				"$titleIsHidden": true,
+				"form": {
+					"name": "samples/forms/customer",
+					"meta": "samples/metas/customer",
+					"controller": "phoenix.empty.controller"
+				},
+				"$type": "form"
+			}
+		}
+	],
+	"$type": "block"
+}

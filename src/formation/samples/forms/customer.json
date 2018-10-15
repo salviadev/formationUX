@@ -1,0 +1,36 @@
+{
+	"name": "customer",
+	"$type": "block",
+	"datasets": {
+		"main": {
+			"$type": "basic",
+			"$data": {
+				"firstName": "John",
+				"lastName": "DOE",
+				"age": 32,
+				"gender": "male",
+				"birthDate": "1986-02-22"
+			}
+		}
+	},
+	"$items": [
+		{
+			"$type": "block",
+			"$items": [
+				{
+					"$bind": "lastName"
+				},
+				{
+					"$bind": "firstName"
+				},
+				{
+					"$bind": "age"
+				},
+				{
+					"$bind": "gender"
+				}
+			]
+		}
+	],
+	"form": true
+}

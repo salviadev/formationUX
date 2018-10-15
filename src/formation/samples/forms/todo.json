@@ -1,0 +1,48 @@
+{
+	"name": "todo",
+	"$type": "block",
+	"datasets": {
+		"main": {
+			"$type": "basic",
+			"$data": {
+				"name": "Johon Smith",
+				"checkList": [
+					{
+						"id": 1,
+						"done": false,
+						"title": "Read Emails"
+					},
+					{
+						"id": 2,
+						"done": true,
+						"title": "Play solitaire"
+					},
+					{
+						"id": 3,
+						"done": false,
+						"title": "Drink coffe"
+					},
+					{
+						"id": 4,
+						"done": false,
+						"title": "Read Emails"
+					}
+				]
+			}
+		}
+	},
+	"$items": [
+		{
+			"$type": "block",
+			"$items": [
+				{
+					"$bind": "name"
+				},
+				{
+					"$bind": "checkList"
+				}
+			]
+		}
+	],
+	"form": true
+}

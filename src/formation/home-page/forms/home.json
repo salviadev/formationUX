@@ -20,6 +20,15 @@
 					"$items": [
 						{
 							"$bind": "$links.link1"
+						},
+						{
+							"$bind": "$links.customer"
+						},
+						{
+							"$bind": "$links.todo"
+						},
+						{
+							"$bind": "$links.address"
 						}
 					],
 					"$name": "Links",

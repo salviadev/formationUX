@@ -1,0 +1,17 @@
+{
+	"type": "object",
+	"properties": {
+		"name": {
+			"title": "Name",
+			"type": "string"
+		},
+		"title": {
+			"title": "Title",
+			"type": "string"
+		},
+		"greeting": {
+			"title": "Greeting",
+			"type": "string"
+		}
+	}
+}

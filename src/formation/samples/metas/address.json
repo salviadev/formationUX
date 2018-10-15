@@ -1,0 +1,30 @@
+{
+	"type": "object",
+	"properties": {
+		"id": {
+			"title": "Id",
+			"type": "integer"
+		},
+		"postalCode": {
+			"title": "Postal Code",
+			"type": "string"
+		},
+		"city": {
+			"title": "City",
+			"type": "string"
+		},
+		"country": {
+			"type": "object",
+			"properties": {
+				"code": {
+					"title": "Code",
+					"type": "string"
+				},
+				"title": {
+					"title": "Title",
+					"type": "string"
+				}
+			}
+		}
+	}
+}

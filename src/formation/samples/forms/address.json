@@ -1,0 +1,38 @@
+{
+	"name": "address",
+	"$type": "block",
+	"datasets": {
+		"main": {
+			"$type": "basic",
+			"$data": {
+				"id": 25,
+				"postalCode": "95220",
+				"city": "HERBLAY",
+				"country": {
+					"code": "FR",
+					"title": "France"
+				}
+			}
+		}
+	},
+	"$items": [
+		{
+			"$type": "block",
+			"$items": [
+				{
+					"$bind": "postalCode"
+				},
+				{
+					"$bind": "postalCode"
+				},
+				{
+					"$bind": "country.code"
+				},
+				{
+					"$bind": "country.title"
+				}
+			]
+		}
+	],
+	"form": true
+}

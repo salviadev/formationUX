@@ -1,0 +1,17 @@
+{
+	"name": "address",
+	"$items": [
+		{
+			"$config": {
+				"$titleIsHidden": true,
+				"form": {
+					"name": "samples/forms/address",
+					"meta": "samples/metas/address",
+					"controller": "phoenix.empty.controller"
+				},
+				"$type": "form"
+			}
+		}
+	],
+	"$type": "block"
+}

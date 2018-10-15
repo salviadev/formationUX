@@ -1,0 +1,17 @@
+{
+	"name": "hello",
+	"$items": [
+		{
+			"$config": {
+				"$titleIsHidden": true,
+				"form": {
+					"name": "hello-world/forms/hello",
+					"meta": "hello-world/metas/hello",
+					"controller": "phoenix.empty.controller"
+				},
+				"$type": "form"
+			}
+		}
+	],
+	"$type": "block"
+}

@@ -13,11 +13,35 @@ namespace Formation {
             const that = this;
             switch (action.property) {
                 case '$links.link1':
-                    form.navigate('hello-world/hello-world', {
+                    form.navigate('hello-world/hello', {
                         canGoBack: true,
                         checkForChanges: false,
                         urlSearch: {
                             source: 'link1'
+                        }
+                    });
+                    break;
+                case '$links.customer':
+                    form.navigate('samples/customer', {
+                        canGoBack: true,
+                        checkForChanges: false,
+                        urlSearch: {
+                        }
+                    });
+                    break;
+                case '$links.address':
+                    form.navigate('samples/address', {
+                        canGoBack: true,
+                        checkForChanges: false,
+                        urlSearch: {
+                        }
+                    });
+                    break;
+                case '$links.todo':
+                    form.navigate('samples/todo', {
+                        canGoBack: true,
+                        checkForChanges: false,
+                        urlSearch: {
                         }
                     });
                     break;
