@@ -12,6 +12,28 @@
 			}
 		}
 	},
+	"links": {
+		"modifyName": {
+			"title": "Modify Name"
+		},
+		"toggleIsDisabledName": {
+			"title": "Toggle disabled"
+		},
+		"toggleIsHiddenName": {
+			"title": "Toggle hidden"
+		},
+		"home": {
+			"title": "Go Home"
+		}
+
+
+	},
+	"states": {
+		"name": {
+			"isHidden": true,
+			"isMandatory": true
+		}
+	},
 	"definitions": {
 		"todoItem":  {
 			"type": "object",
@@ -26,6 +48,11 @@
 				},
 				"title": {
 					"title": "Title",
+					"type": "string"
+				},
+				"date": {
+					"title": "Date",
+					"format": "date",
 					"type": "string"
 				}
 			}

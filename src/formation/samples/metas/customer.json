@@ -20,7 +20,17 @@
 		},
 		"gender": {
 			"title": "Gender",
-			"type": "string"
+			"type": "string",
+			"enum": ["male", "female"],
+			"enumNames": ["Male", "Female"]
+		}
+	},
+	"links": {
+		"save": {
+			"title": "Enregistrer"
+		},
+		"remove": {
+			"title": "Supprimer"
 		}
 	}
 }

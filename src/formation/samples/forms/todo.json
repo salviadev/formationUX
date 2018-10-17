@@ -15,7 +15,12 @@
 					{
 						"id": 2,
 						"done": true,
-						"title": "Play solitaire"
+						"title": "Play solitaire",
+						"$states": {
+							"done": {
+								"isDisabled": true
+							}
+						}
 					},
 					{
 						"id": 3,
@@ -27,7 +32,12 @@
 						"done": false,
 						"title": "Read Emails"
 					}
-				]
+				],
+				"$states": {
+					"name": {
+						"isDisabled": true
+					}
+				}
 			}
 		}
 	},
@@ -39,9 +49,59 @@
 					"$bind": "name"
 				},
 				{
-					"$bind": "checkList"
+					"$bind": "checkList",
+					"$widget": "basicgrid",
+					"options": {
+						"editing": true,
+						"selecting": {
+							"row": true,
+							"cell": true,
+							"multiselect": false
+						},
+						"columns": [
+							{
+								"$bind": "done",
+								"options": {
+									"width": "4em"
+								}
+							},
+							{
+								"$bind": "title",
+								"options": {
+									"width": "100%",
+									"editing": false
+								}
+							},
+							{
+								"$bind": "date",
+								"options": {
+                                    "width": "10em",
+                                    "bindVisibility": "name",
+                                    "bindVisibilityValue": "John"
+								}
+							}
+						]
+					}
 				}
 			]
+		},
+		{
+			"$type": "block",
+			"$items": [
+				{
+					"$bind": "$links.modifyName"
+				},
+				{
+					"$bind": "$links.toggleIsDisabledName"
+				},
+				{
+					"$bind": "$links.toggleIsHiddenName"
+				},
+				{
+					"$bind": "$links.home"
+				}
+			],
+			"$inline": true
 		}
 	],
 	"form": true

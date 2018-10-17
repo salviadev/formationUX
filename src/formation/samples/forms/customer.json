@@ -18,18 +18,139 @@
 			"$type": "block",
 			"$items": [
 				{
-					"$bind": "lastName"
+					"$type": "block",
+					"$items": [
+						{
+							"$bind": "firstName"
+						},
+						{
+							"$bind": "lastName"
+						}
+					],
+					"$title": {
+						"value": "Section 1",
+						"size": 4,
+						"$style": "$spo-h3"
+					}
 				},
 				{
-					"$bind": "firstName"
+					"$type": "row",
+					"$items": [
+						{
+							"$items": [],
+							"$colSize": 6
+						},
+						{
+							"$items": [],
+							"$colSize": 1
+						},
+						{
+							"$items": [],
+							"$colSize": 2
+						},
+						{
+							"$items": [],
+							"$colSize": 3
+						}
+					]
 				},
 				{
-					"$bind": "age"
+					"$type": "block",
+					"$items": [
+						{
+							"$bind": "lastName",
+							"options": {
+								"columns": true,
+								"maxWidth": "30em",
+								"labelCol": 2
+							}
+						},
+						{
+							"$bind": "firstName",
+							"options": {
+								"columns": true,
+								"maxWidth": "30em",
+								"labelCol": 2
+							}
+						},
+						{
+							"$bind": "birthDate",
+							"options": {
+								"columns": true,
+								"labelCol": 2
+							}
+						},
+						{
+							"$bind": "gender"
+						},
+						{
+                            "$bind": "gender",
+                            "$widget": "radio",
+                            "options": {
+                                "horizontal": true
+                            }
+                            
+						},
+						{
+                            "$bind": "gender",
+                            "$widget": "grpbtn"
+                            
+						}
+					],
+					"$title": {
+						"value": "Section 2",
+						"size": 4,
+						"$style": "$spo-h3"
+					},
+					"$fieldsOptions": {
+						"columns": true,
+						"labelCol": 2
+					}
 				},
 				{
-					"$bind": "gender"
+					"$type": "block",
+					"$items": [
+						{
+							"$bind": "firstName"
+						},
+						{
+							"$bind": "firstName"
+						}
+					],
+					"$title": {
+						"value": "Section 3",
+						"size": 4,
+						"$style": "$spo-h3"
+					},
+					"$inline": true
 				}
-			]
+			],
+			"$title": {
+				"value": "General",
+				"size": 4,
+				"$style": "$spo-h2"
+			}
+		},
+		{
+			"$type": "block",
+			"$items": [
+				{
+					"$bind": "$links.save",
+					"options": {
+						"right": true,
+						"type": "success"
+					}
+				},
+				{
+					"$bind": "$links.remove",
+					"options": {
+						"right": true,
+						"type": "danger"
+					}
+				}
+			],
+			"$inline": true,
+			"$sticky": "bottom"
 		}
 	],
 	"form": true

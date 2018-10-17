@@ -7,7 +7,7 @@
 				"form": {
 					"name": "samples/forms/todo",
 					"meta": "samples/metas/todo",
-					"controller": "phoenix.empty.controller"
+					"controller": "formation.todo.controller"
 				},
 				"$type": "form"
 			}

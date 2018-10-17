@@ -17,21 +17,42 @@
 	},
 	"$items": [
 		{
-			"$type": "block",
+			"$type": "accordion",
 			"$items": [
 				{
-					"$bind": "postalCode"
+					"opened": true,
+					"$type": "accordion-group",
+					"$items": [
+						{
+							"$bind": "postalCode"
+						},
+						{
+							"$bind": "city"
+						}
+					],
+					"$title": {
+						"value": "City"
+					},
+					"$name": "page0"
 				},
 				{
-					"$bind": "postalCode"
-				},
-				{
-					"$bind": "country.code"
-				},
-				{
-					"$bind": "country.title"
+					"$type": "accordion-group",
+					"$items": [
+						{
+							"$bind": "country.code"
+						},
+						{
+							"$bind": "country.title"
+						}
+					],
+					"$title": {
+						"value": "Country"
+					},
+					"$name": "page1",
+					"opened": false
 				}
-			]
+			],
+			"$widget": "tabs"
 		}
 	],
 	"form": true
