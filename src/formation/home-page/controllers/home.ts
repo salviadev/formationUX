@@ -1,4 +1,4 @@
-// <reference types="@phoenix/phoenix-cli" />
+/// <reference types="@phoenix/phoenix-cli" />
 namespace Formation {
     const
         _p = Phoenix,

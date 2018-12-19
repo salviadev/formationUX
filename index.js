@@ -1,6 +1,6 @@
 var fs = require('fs');
 var express = require('express');
-var devServer = require('phoenix-seed');
+var devServer = require('@phoenix/phoenix-seed');
 var app = express();
 //Load config
 var config = JSON.parse(fs.readFileSync('./config.json'));
